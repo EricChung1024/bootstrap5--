@@ -9,11 +9,11 @@
 <div class="demo">
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="練習" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="練習" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </div>
 
@@ -22,9 +22,9 @@
 <p>為表單加上 .form-control-{ sm, lg} 等不同尺寸</p>
 
 <div class="demo">
-  <input class="form-control 練習 mb-2" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+  <input class="form-control form-control-lg mb-2" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
   <input class="form-control mb-2" type="text" placeholder="Default input" aria-label="default input example">
-  <input class="form-control 練習" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+  <input class="form-control form-control-sm " type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
 </div>
 
 <h2>禁用</h2>
@@ -32,8 +32,8 @@
 <p>為表單加上 disabled 屬性</p>
 
 <div class="demo">
-  <input class="form-control mb-2" type="text" placeholder="Disabled input" value="Disabled input" aria-label="Disabled input example" 練習>
-  <input class="form-control" type="text" placeholder="Disabled readonly input" value="Disabled readonly input" aria-label="Disabled input example" 練習 readonly>
+  <input class="form-control mb-2" type="text" placeholder="Disabled input" value="Disabled input" aria-label="Disabled input example" disabled>
+  <input class="form-control" type="text" placeholder="Disabled readonly input" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
 </div>
 
 <h2>僅能閱讀</h2>
@@ -41,7 +41,7 @@
 <p>為表單加上 readonly 屬性</p>
 
 <div class="demo">
-  <input class="form-control" type="text" value="Readonly input here..." placeholder="Readonly input here..." aria-label="readonly input example" 練習>
+  <input class="form-control" type="text" value="Readonly input here..." placeholder="Readonly input here..." aria-label="readonly input example" readonly>
 </div>
 
 <h2>僅能閱讀的文本</h2>
@@ -52,7 +52,7 @@
   <div class="mb-3 row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <input type="text" readonly class="練習" id="staticEmail" value="email@example.com">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" readonly>
     </div>
   </div>
   <div class="mb-3 row">
@@ -67,7 +67,7 @@
   <form class="row g-3">
     <div class="col-auto">
       <label for="staticEmail2" class="visually-hidden">Email</label>
-      <input type="text" readonly class="練習" id="staticEmail2" value="email@example.com">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com" readonly>
     </div>
     <div class="col-auto">
       <label for="inputPassword2" class="visually-hidden">Password</label>
@@ -110,7 +110,7 @@
 
 <div class="demo">
   <label for="exampleColorInput" class="form-label">Color picker</label>
-  <input type="color" class="form-control 練習" id="exampleColorInput" value="#00aaff" title="Choose your color">
+  <input type="color" class=" form-control  form-control-color" id="exampleColorInput" value="#00aaff" title="Choose your color">
 </div>
 
 <h2>資料清單</h2>
@@ -125,13 +125,13 @@
 <div class="demo">
   <label for="exampleDataList" class="form-label">Datalist example</label>
   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-  <!-- <datalist id="datalistOptions">
+  <datalist id="datalistOptions">
     <option value="San Francisco">
     <option value="New York">
     <option value="Seattle">
     <option value="Los Angeles">
     <option value="Chicago">
-  </datalist> -->
+  </datalist>
 </div>
 <!-- 🙇🙇練習結束🙇🙇 -->
 </main>
